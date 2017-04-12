@@ -34,7 +34,7 @@ return [
 
       ], /* fields */
 
-    ], /* blog-posts */
+    ], /* messages */
 
   ], /* content types */
 
