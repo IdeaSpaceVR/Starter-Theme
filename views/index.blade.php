@@ -17,8 +17,8 @@
     <meta http-equiv="origin-trial" data-feature="WebVR" data-expires="04/11/17" content="{{ $origin_trial_token }}">
 
     <meta property="og:site_name" content="@yield('title')" />
-    <meta property="og:image:secure_url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:image:secure_url" content="{{ url($theme_dir . '/screenshot.png') }}" />
+    <meta property="og:image" content="{{ url($theme_dir . '/screenshot.png') }}" />
     <meta property="og:description" content="@yield('title')" />
     <meta property="og:title" content="@yield('title')" />
     <meta property="og:type" content="website" />
