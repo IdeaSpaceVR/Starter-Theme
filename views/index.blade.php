@@ -14,7 +14,7 @@
     <meta name="copyright" content="" />
     <meta name="robots" content="follow, index" />
 
-    <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2017-11-15" content="{{ $origin_trial_token }}">
+    <meta http-equiv="origin-trial" data-feature="{{ $origin_trial_token_data_feature }}" data-expires="{{ $origin_trial_token_data_expires }}" content="{{ $origin_trial_token }}">
 
     <meta property="og:site_name" content="@yield('title')" />
     <meta property="og:image:secure_url" content="{{ url($theme_dir . '/screenshot.png') }}" />
@@ -25,7 +25,7 @@
     <meta property="og:url" content="{{ \Request::url() }}" />
 
     <link rel="stylesheet" href="{{ url($theme_dir . '/css/style.css') }}">
-    <script src="{{ url($theme_dir . '/js/aframe-v0.6.1.min.js') }}"></script>
+    <script src="{{ url($theme_dir . '/js/aframe.min.js') }}"></script>
     <script src="{{ url($theme_dir . '/js/aframe-layout-component.min.js') }}"></script>
 </head>
 <body>
